@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "app-one",
-    "slug": "app-one",
+    "name": "code-blog",
+    "slug": "code-blog",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
@@ -19,8 +19,7 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      },
-      "package": "com.swapnil.ing.in.appone"
+      }
     },
     "web": {
       "bundler": "metro",
@@ -32,14 +31,6 @@
     ],
     "experiments": {
       "typedRoutes": true
-    },
-    "extra": {
-      "router": {
-        "origin": false
-      },
-      "eas": {
-        "projectId": "bf6b635b-4dff-4d4a-b11e-19b5db44c048"
-      }
     }
   }
 }

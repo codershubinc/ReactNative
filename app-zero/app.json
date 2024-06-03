@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "app-one",
-    "slug": "app-one",
+    "name": "app-zero",
+    "slug": "app-zero",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
@@ -20,7 +20,7 @@
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "package": "com.swapnil.ing.in.appone"
+      "package": "com.swapnil.ing.in.appzero"
     },
     "web": {
       "bundler": "metro",
@@ -38,7 +38,7 @@
         "origin": false
       },
       "eas": {
-        "projectId": "bf6b635b-4dff-4d4a-b11e-19b5db44c048"
+        "projectId": "bc6b6997-aa2e-46ae-afc6-afe26b9fd355"
       }
     }
   }
