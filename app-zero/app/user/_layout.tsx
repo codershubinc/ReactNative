@@ -6,8 +6,11 @@ const _layout = () => {
     return (
         <Stack>
             <Stack.Screen
-                name="toLogin"
-                options={{ headerShown: false }}
+                name="signUp"
+                options={
+                    {
+                        headerShown: false, 
+                    }}
             />
         </Stack>
     )
