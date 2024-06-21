@@ -27,7 +27,7 @@ export default function RootLayout() {
   }
 
   return (
-    <ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>
+    <ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DarkTheme} >
       <Stack>
 
         <Stack.Screen
@@ -45,12 +45,24 @@ export default function RootLayout() {
             }
           }
         />
+        
 
 
 
         <Stack.Screen
           name="auth"
-          options={{ headerShown: false }}
+          options={
+            {
+              headerShown: false,
+              title: "Auth",
+              headerTitleAlign: 'center',
+              statusBarStyle: "dark",
+              statusBarHidden: true,
+              statusBarTranslucent: true,
+              statusBarColor: "black"
+
+            }
+          }
         />
 
         

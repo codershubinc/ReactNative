@@ -1,5 +1,6 @@
 import { Text, SafeAreaView } from 'react-native'
 import React from 'react'
+import { Link } from 'expo-router'
 
 const Index = () => {
     return (
@@ -9,7 +10,7 @@ const Index = () => {
             >
                 Index
             </Text>
-
+            <Link href="/auth/signup" className="text-white">Signup</Link>
         </SafeAreaView>
     )
 }

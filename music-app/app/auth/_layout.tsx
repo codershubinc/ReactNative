@@ -12,6 +12,21 @@ const _layout = () => {
                         headerShown: false, 
                     }}
             />
+            <Stack.Screen
+                name="login"
+                options={
+                    {
+                        headerShown: false, 
+                    }}
+            />
+            <Stack.Screen
+                name="verificationEmailSentPage"
+                options={
+                    {
+                        headerShown: false, 
+                    }}
+            />
+
         </Stack>
     )
 }
