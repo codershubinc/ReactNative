@@ -80,7 +80,7 @@ const LoginPage = () => {
             console.log('user login successfully', loginUser);
 
             // >===> redirecting to user dashboard
-            router.push('/user/user_dashboard')
+            router.push('/')
 
 
             setIsLoading(false)
@@ -127,7 +127,7 @@ const LoginPage = () => {
                         <InputComp
                             title="Enter  PassWord"
                             placeholder="PassWord ..."
-                            keyboardType={"password"}
+                            keyboardType="visible-password"
                             style='m-1'
                             titleColor='white'
                             border={false}

@@ -4,23 +4,23 @@
     "slug": "music-app",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/images/icon.png",
+    "icon": "./assets/images/music_app.png",
     "scheme": "myapp",
     "userInterfaceStyle": "automatic",
     "splash": {
-      "image": "./assets/images/react-logo@3x.png",
+      "image": "./assets/images/music_app.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#000000" 
     },
     "ios": {
       "supportsTablet": true
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/images/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
+        "foregroundImage": "./assets/images/music_app.png",
+        "backgroundColor": "#000000"
       },
-      "package": "com.swapnil.ing.in.musicapp"
+      "package": "com.swapnil.ing.in.musichub"
     },
     "web": {
       "bundler": "metro",

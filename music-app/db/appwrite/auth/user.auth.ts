@@ -53,13 +53,17 @@ export class AuthService {
 
     async isUserLoggedIn() {
         try {
-            console.log("getting current user");
+            console.log("getting current user , is login");
 
             const user = await this.account.get();
+            console.log('user at user.auth.ts', user);
             if (user) {
+
                 return true
             }
         } catch (error) {
+            console.log('error at user.auth.ts', error);
+            
             throw false;
         }
     }

@@ -28,10 +28,14 @@ const Index = () => {
 
         setErr(false)
         try {
+            console.log('finding current user');
+            
             const user = await authService.isUserLoggedIn()
             console.log('user', user);
             if (user) {
-                router.push('/user/user_dashboard')
+                console.log('user is logged in');
+                
+                router.push('/music/all_playlist_page')
 
             } else {
                 router.push('/auth/login')

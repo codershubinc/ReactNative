@@ -81,6 +81,21 @@ export default function RootLayout() {
             }
           }
         />
+        <Stack.Screen
+          name="music"
+          options={
+            {
+              headerShown: false,
+              title: "music",
+              headerTitleAlign: 'center',
+              statusBarStyle: "dark",
+              statusBarHidden: true,
+              statusBarTranslucent: true,
+              statusBarColor: "black"
+
+            }
+          }
+        />
 
         
         <Stack.Screen name="+not-found" />
