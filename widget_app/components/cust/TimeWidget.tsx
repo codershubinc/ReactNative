@@ -4,12 +4,15 @@ import React, { useEffect, useState } from 'react'
 const TimeWidget = () => {
 
     const [currentTime, setCurrentTime] = useState<string>('');
+    const [currentDate, setCurrentDate] = useState<string>('')
 
     // Function to get current time in hh:mm:ss format
     function updateCurrentTime() {
         const now = new Date();
         const timeString = now.toLocaleTimeString(); // Format: hh:mm:ss
         setCurrentTime(timeString);
+        const dateString = now.toLocaleDateString() 
+        setCurrentDate(dateString)
     }
 
     useEffect(() => {
@@ -29,11 +32,17 @@ const TimeWidget = () => {
                 style={{
                     fontSize: 30,
                     color: 'white',
-                    position: 'absolute',
-                    top: 30
                 }}
             >
                 {currentTime}
+            </Text>
+            <Text
+                style={{
+                    fontSize: 30,
+                    color: 'white',
+                }}
+            >
+                {currentDate}
             </Text>
         </View>
     )

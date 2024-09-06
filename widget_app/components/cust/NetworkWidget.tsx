@@ -27,9 +27,7 @@ const NetworkWidget = () => {
             <Text
             style={{
                 fontSize: 30,
-                color: 'white',
-                position: 'absolute',
-                top: 0,
+                color: 'white', 
             }}
             >
                 {networkSpeed}

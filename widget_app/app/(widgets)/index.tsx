@@ -1,17 +1,18 @@
 import React from 'react';
 import { StyleSheet, View } from 'react-native';
 import BatteryWidget from '@/components/cust/BatteryWidget';
-import NetworkWidget from '@/components/cust/NetworkWidget';
-import TimeWidget from '@/components/cust/TimeWidget';
+import { useKeepAwake } from 'expo-keep-awake';
+import NotificationWidget from '@/components/cust/NotificationPermission';
 
 export default function App() {
+
+    useKeepAwake()
 
 
     return (
         <View style={styles.container}>
             <BatteryWidget />
-            <NetworkWidget/>
-            <TimeWidget/>
+            <NotificationWidget />
         </View>
     );
 }
@@ -20,8 +21,8 @@ const styles = StyleSheet.create({
     container: {
         flex: 1,
         marginTop: 15,
-        height: "100%",
-        width: "100%",
-        borderBlockColor: 'white',
+        justifyContent: 'space-between',
+        height: 20,
+        width: '100%',
     },
 });
