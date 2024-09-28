@@ -2,7 +2,8 @@ import React from 'react';
 import { StyleSheet, View } from 'react-native';
 import BatteryWidget from '@/components/cust/BatteryWidget';
 import { useKeepAwake } from 'expo-keep-awake';
-import NotificationWidget from '@/components/cust/NotificationPermission';
+import TimeWidget from '@/components/cust/TimeWidget';
+
 
 export default function App() {
 
@@ -11,18 +12,27 @@ export default function App() {
 
     return (
         <View style={styles.container}>
-            <BatteryWidget />
-            <NotificationWidget />
+            <View
+                style={styles.topWidget}
+            >
+                <BatteryWidget />
+                <TimeWidget />
+            </View>
         </View>
     );
 }
 
 const styles = StyleSheet.create({
-    container: {
-        flex: 1,
+    container: { 
         marginTop: 15,
-        justifyContent: 'space-between',
         height: 20,
-        width: '100%',
+        width: '100%', 
+        
     },
+    topWidget: {
+        flexDirection: 'row',
+        alignItems: 'center',
+        justifyContent: 'space-between',
+        width: '100%',
+    }
 });

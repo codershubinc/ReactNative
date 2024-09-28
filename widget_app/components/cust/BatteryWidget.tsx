@@ -1,7 +1,11 @@
 import { View, Text } from 'react-native';
 import React, { useEffect, useState } from 'react';
-import { getBatteryLevelAsync, getBatteryStateAsync, BatteryState, addBatteryStateListener } from 'expo-battery';
-import getMusicInfo from './MediaSessionApi';
+import {
+    getBatteryLevelAsync,
+    getBatteryStateAsync,
+    BatteryState,
+    addBatteryStateListener
+} from 'expo-battery';
 
 const BatteryWidget = () => {
     const [batteryLevel, setBatteryLevel] = useState<number>(0);
@@ -11,7 +15,6 @@ const BatteryWidget = () => {
     async function fetchBatteryLevel() {
         const level = await getBatteryLevelAsync();
         setBatteryLevel(level);
-        getMusicInfo()
     }
 
     // Function to fetch battery charging state
@@ -24,7 +27,6 @@ const BatteryWidget = () => {
         // Fetch the initial battery level and charging state
         fetchBatteryLevel();
         fetchBatteryState();
-
 
         // Set up an interval to fetch the battery level every 1 second (1000 ms)
         const interval = setInterval(() => {

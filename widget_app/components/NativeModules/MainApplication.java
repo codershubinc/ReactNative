@@ -1,9 +1,9 @@
-import com.widget.MusicInfoModule; // Import the module
+import com.yourapp.MusicInfoPackage; // Import your package
 
 @Override
 public List<ReactPackage> getPackages() {
     return Arrays.<ReactPackage>asList(
         new MainReactPackage(),
-        new MusicInfoPackage() // Add your package here
+        new MusicInfoPackage() // Register your package here
     );
 }

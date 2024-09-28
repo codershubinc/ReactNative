@@ -1,6 +1,4 @@
-import { View, Text } from 'react-native'
 import React from 'react'
-import App from './index'
 import { Stack } from 'expo-router'
 
 const Layout = () => {
@@ -11,6 +9,9 @@ const Layout = () => {
                     headerShown: false,
                     orientation: "landscape",
                     navigationBarHidden: true,
+                    statusBarStyle: 'light',
+                    statusBarTranslucent: false, 
+                    statusBarColor: 'black',
                     statusBarHidden: true
                 }
             } />
