@@ -8,7 +8,6 @@ async function getMusicInfo() {
         console.log("Currently playing:", trackInfo);
     } catch (error) {
         console.log('music info err' , MusicInfo);
-        
         console.log("Error fetching track info:", error);
     }
 }

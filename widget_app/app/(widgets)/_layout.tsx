@@ -6,13 +6,15 @@ const Layout = () => {
         <Stack>
             <Stack.Screen name="index" options={
                 {
-                    headerShown: false,
-                    orientation: "landscape",
+                    headerShown: false, 
+                    orientation: 'all',
                     navigationBarHidden: true,
-                    statusBarStyle: 'light',
-                    statusBarTranslucent: false, 
+                    statusBarStyle: 'dark',
+                    statusBarTranslucent: true, 
                     statusBarColor: 'black',
-                    statusBarHidden: true
+                    statusBarHidden: true,
+
+                    
                 }
             } />
         </Stack>

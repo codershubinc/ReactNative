@@ -3,6 +3,7 @@ import { StyleSheet, View } from 'react-native';
 import BatteryWidget from '@/components/cust/BatteryWidget';
 import { useKeepAwake } from 'expo-keep-awake';
 import TimeWidget from '@/components/cust/TimeWidget';
+import M from '@/components/Music/musicComp';
 
 
 export default function App() {
@@ -16,6 +17,7 @@ export default function App() {
                 style={styles.topWidget}
             >
                 <BatteryWidget />
+                <M />
                 <TimeWidget />
             </View>
         </View>
@@ -23,10 +25,10 @@ export default function App() {
 }
 
 const styles = StyleSheet.create({
-    container: { 
+    container: {
         marginTop: 15,
-        height: 20,
-        width: '100%', 
+        height: "100%",
+        width: '100%',
         
     },
     topWidget: {

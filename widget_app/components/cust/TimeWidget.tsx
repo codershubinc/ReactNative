@@ -9,9 +9,14 @@ const TimeWidget = () => {
     // Function to get current time in hh:mm:ss format
     function updateCurrentTime() {
         const now = new Date();
-        const timeString = now.toLocaleTimeString(); // Format: hh:mm:ss
+        const timeString = now.toLocaleTimeString('en-US', {
+            hour: '2-digit',
+            minute: '2-digit',
+            second: '2-digit',
+            hour12: true
+        }); // Format: hh:mm:ss
         setCurrentTime(timeString);
-        const dateString = now.toLocaleDateString() 
+        const dateString = now.toLocaleDateString()
         setCurrentDate(dateString)
     }
 

@@ -14,12 +14,14 @@ const BatteryWidget = () => {
     // Function to fetch battery level
     async function fetchBatteryLevel() {
         const level = await getBatteryLevelAsync();
+        // console.log("Battery Level:", level); // Debug log
         setBatteryLevel(level);
     }
 
     // Function to fetch battery charging state
     async function fetchBatteryState() {
         const state = await getBatteryStateAsync();
+        // console.log("Battery State:", state); // Debug log
         setIsCharging(state === BatteryState.CHARGING);
     }
 
@@ -58,6 +60,7 @@ const BatteryWidget = () => {
                 height: 50,
                 alignItems: 'center',
                 justifyContent: 'center',
+                flexDirection: 'row',
             }}
         >
             <Text
@@ -65,8 +68,15 @@ const BatteryWidget = () => {
                     fontSize: 30,
                     color: 'white',
                 }}
+            >{isCharging ? '⚡' : '🔋'} </Text>
+            <Text
+                style={{
+                    fontSize: 30,
+                    color: 'white',
+                }}
             >
-                {isCharging ? '⚡' : '🔋'} {batteryLevel === 0 ? '⚡' : (batteryLevel * 100).toFixed(0)}%
+                {batteryLevel === 0 ? '0' : (batteryLevel * 100).toFixed(0)}%
+
             </Text>
         </View>
     );
