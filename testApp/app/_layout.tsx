@@ -36,6 +36,7 @@ export default function RootLayout() {
           title: 'index',
           headerBackVisible: false,
         }}
+        
       >
         <Stack.Screen name="test"
           options={{
