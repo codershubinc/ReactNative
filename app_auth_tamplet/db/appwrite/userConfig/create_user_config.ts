@@ -1,8 +1,8 @@
 import { Client, ID, Databases, Storage, Query } from "appwrite";
 
 const conf = {
-    databaseId: "662bd67b001e4f718eca",
-    collectionId: '665f5c84002ea2b3d7a7'
+    databaseId: ".env",
+    collectionId: '.env'
 }
 
 
@@ -13,7 +13,7 @@ export class UserConfig {
     constructor() {
         this.clint
             .setEndpoint('https://cloud.appwrite.io/v1')
-            .setProject('662ab42b7d237361fa26');
+            .setProject('.env');
 
         this.database = new Databases(this.clint);
         this.bucket = new Storage(this.clint);
